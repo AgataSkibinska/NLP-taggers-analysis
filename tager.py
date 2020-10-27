@@ -25,13 +25,16 @@ def ccl_orths(ccl):
     tree = ET.fromstring(ccl)
     return [orth.text for orth in tree.iter('orth')]
 
-orths = ccl_orths(ccl)
 
+orths = ccl_orths(ccl)
+print("Tokeny "+str(orths))
 
 def ccl_poses(ccl):
     tree = ET.fromstring(ccl)
     return [tok.find('./lex/ctag').text.split(":")[0] for tok in tree.iter('tok')]
 
+
 poses = ccl_poses(ccl)
+print("Positions "+str(poses))
 
 
