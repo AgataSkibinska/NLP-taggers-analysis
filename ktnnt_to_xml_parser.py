@@ -53,5 +53,6 @@ def parse_krnnt_output_to_xml(krnnt_file, output_file):
     return
 
 if __name__ == '__main__':
-    parse_krnnt_output_to_xml(output_file='pol_eval_data/test-tagged-krnnt.ccl', krnnt_file="pol_eval_data/test-krnnt-output.txt")
+    parse_krnnt_output_to_xml(output_file='pol_eval_data/test-tagged-krnnt.ccl',
+                              krnnt_file="pol_eval_data/test-krnnt-output.txt")
 

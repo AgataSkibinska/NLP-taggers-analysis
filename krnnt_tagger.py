@@ -1,13 +1,13 @@
 import requests
 
-poleval_test_path = 'pol_eval_data/test-raw.txt'
-url = ' http://localhost:9003'
 
-text = open(poleval_test_path, "r", encoding="utf8").read()
+def tag_data_using_krnnt(input_file_path, output_file_path):
+    url = ' http://localhost:9003'
 
-r = requests.post(url, data=text.encode("utf-8"))
-output = r.content.decode('utf-8')
-print(output)
+    text = open(input_file_path, "r", encoding="utf8").read()
 
-with open("pol_eval_data/test-krnnt-output.txt", "w", encoding="utf-8") as text_file:
-    text_file.write(output)
+    r = requests.post(url, data=text.encode("utf-8"))
+    output = r.content.decode('utf-8')
+
+    with open(output_file_path, "w", encoding="utf-8") as text_file:
+        text_file.write(output)
