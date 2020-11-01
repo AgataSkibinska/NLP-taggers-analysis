@@ -9,7 +9,7 @@ clarinpl_url = "http://ws.clarin-pl.eu/nlprest2/base"
 user_mail = ""
 
 url = clarinpl_url + "/process"
-#lpmn = "wcrft2"
+# lpmn = "morphoDita"
 
 
 def ccl_orths(ccl):
