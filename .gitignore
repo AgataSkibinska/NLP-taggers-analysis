@@ -1,4 +1,8 @@
 /venv
 /wiki_train_34_categories_data
+/wiki_test_34_categories_data
 .idea/
 .ipynb_checkpoints
+/out_raw_txt
+/wiki_tagged
+__pycache__/
