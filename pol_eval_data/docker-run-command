@@ -1,4 +1,0 @@
-docker run -v C:\Users\askib\PycharmProjects\nlp-cw1\pol_eval_data:/app/data piotrgramacki/pwr_nlp_tagger_eval:0.1 /app/data/test-tagged-krnnt.ccl gold-task-c.xml
-
-docker run -v path/to/data:/app/data piotrgramacki/pwr_nlp_tagger_eval:0.1 /app/data/{your_data} gold-task-c.xml
-
